@@ -1,0 +1,145 @@
+CTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>誰在台灣文學館</title>
+		<style>
+		.background
+		{
+			margin:0;
+			width:100%;
+			height:100vh;
+			opacity:1;
+			background-image:url("https://github.com/nelsonlai1/uidd2018/blob/master/%E5%BA%95%E5%9C%96.png?raw=true");
+			background-size:contain;
+			background-position:center;
+			background-repeat:no-repeat;
+			z-index:0;
+		}
+		#nmtl
+		{
+			position:absolute;
+			left:33%;
+			top:3%;
+			z-index:1;
+		}
+		#window
+		{	
+			position:absolute;
+			left:628px;
+			top:28px;
+			z-index:-1;
+		}
+		#lai_photo
+		{
+			position:absolute;
+			left:628px;
+			top:28px;
+			z-index:-2;
+		}
+		#chung_photo
+		{
+			position:absolute;
+			left:628px;
+			top:28px;
+			z-index:-2;
+		}
+		#who
+		{
+			position:absolute;
+			top:5%;
+			left:33%;
+			z-index:1;
+		}
+		#lai
+		{
+			position:absolute;
+			top:5%;
+			left:33%;
+			z-index:1;
+		}
+		#chung
+		{
+			position:absolute;
+			top:5%;
+			left:33%;
+			z-index:1;
+		}
+		#intro
+		{
+			position:absolute;
+			top:75%;
+			left:40%;
+			width:20%;
+			height:10%;
+			text-align:center;
+			font-family:標楷體;
+			font-size:20px;
+		}
+		#lai_intro
+		{
+			position:absolute;
+			top:75%;
+			left:40%;
+			width:20%;
+			height:10%;
+			text-align:center;
+			font-family:標楷體;
+			font-size:15px;
+			display:none;
+		}
+		#chung_intro
+		{
+			position:absolute;
+			top:75%;
+			left:40%;
+			width:20%;
+			height:10%;
+			text-align:center;
+			font-family:標楷體;
+			font-size:15px;
+			display:none;
+		}
+		#lai_word
+		{
+			position:absolute;
+			top:1%;
+			left:33%;
+			z-index:2;
+		}
+		#chung_word
+		{
+			position:absolute;
+			top:1%;
+			left:33%;
+			z-index:2;
+		}
+		</style>
+		<script src="drag.js">
+		</script>
+	</head>
+	<body>
+	<div class="background" onmousedown="startmove()" onmouseup="stopmove()">
+		<img id="nmtl" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E8%AA%B0%E5%9C%A8%E5%8F%B0%E7%81%A3%E6%96%87%E5%AD%B8%E9%A4%A8.png?raw=true" width="650">
+		<img id="window" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E9%96%80%E5%8B%95.png?raw=true" width="650" >
+		<img id="who" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E5%95%8F%E8%99%9F.png?raw=true" width="650">
+		<img id="lai_photo" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E8%B3%B4%E5%92%8C2.png?raw=true" width="650">
+		<img id="lai" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E8%B3%B4%E5%92%8C(%E5%AD%97).png?raw=true" width="650" style="display:none;">
+		<img id="lai_word" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E5%81%9A%E5%8A%9F%E5%BE%B7.png?raw=true" width="650" style="display:none;">
+		<img id="chung_photo" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E9%8D%BE%E7%90%86%E5%92%8C2.png?raw=true" width="650" style="display:none;">
+		<img id="chung" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E9%8D%BE%E7%90%86%E5%92%8C(%E5%AD%97).png?raw=true" width="650" style="display:none;">
+		<img id="chung_word" src="https://github.com/nelsonlai1/uidd2018/blob/master/%E6%84%9B%E5%8F%B0%E5%A6%B9.png?raw=true" width="650" style="display:none;">
+		<div id="intro" >
+			<p style="text-decoration:inherit;color:white;">推開窗戶&nbsp;看看裡面有誰ㄅ</p>
+		</div>
+		<div id="lai_intro">
+			<p style="text-decoration:inherit;color:white;">日治時期作家，本職醫生，行醫助貧，也在文壇享<br>有盛名，為台灣最有代表性的民族詩人，作品有<br><一杆秤仔><南國哀歌>等，被譽為台灣新文學之父</p>
+		</div>
+		<div id="chung_intro">
+			<p style="text-decoration:inherit;color:white">台灣客家籍作家，與妻子鍾台妹私奔後過著清苦的<br>生活卻仍創作不斷。作品有<<笠山農場>><<原鄉人>><br><<貧賤夫妻>>等，被譽為"倒在血泊中的筆耕者"。</p>
+		</div>
+	</div>
+	</body>
+</html>
+
