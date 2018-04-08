@@ -1,5 +1,4 @@
-
-n drag()
+function drag()
 {
 	var win = document.getElementById("window");
 	var x = win.offsetLeft;
